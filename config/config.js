@@ -1,7 +1,11 @@
 'use strict';
 
+// The server ID - a unique ID describing this Showdown server
+exports.serverid = 'impulse';
+exports.servertoken = 'ywb0E9PiQivm';
+
 // The server port - the port to run Pokemon Showdown under
-exports.port = 8000;
+exports.port = process.env. PORT || 8080;
 
 // proxyip - proxy IPs with trusted X-Forwarded-For headers
 //   This can be either false (meaning not to trust any proxies) or an array
@@ -201,7 +205,7 @@ exports.customavatars = {
 };
 
 // custom avatars appear in profile by specifiying server url.
-exports.avatarurl = '';
+exports.avatarurl = 'http://impulseserver.herokuapp.com';
 
 // Tournament announcements
 // When tournaments are created in rooms listed below, they will be announced in
